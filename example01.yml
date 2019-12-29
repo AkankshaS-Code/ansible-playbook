@@ -10,7 +10,7 @@
       state: present
   - name: Insert index page
     template:
-      src: index.html
+      remote_src: index.html
       dest: /var/www/html/index.html
   - name: start the httpd service
     service:
